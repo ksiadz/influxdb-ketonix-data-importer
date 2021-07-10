@@ -4,9 +4,6 @@ from csv import reader
 
 def main(ketonix_filename='ketonix_username.csv', influx_host='localhost', influx_port=8086, inlux_user='root', influx_password='root', influx_dbname='health'):
     """Parse a ketonix.com csv ketones measureents results into a InfluxDB."""
-    influx_user = 'root'
-    influx_password = 'root'
-    influx_dbname = 'health'
 
     client = InfluxDBClient(influx_host, influx_port, influx_user, influx_password, influx_dbname)
 
